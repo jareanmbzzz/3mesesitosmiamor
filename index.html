@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3 mesesitos mi amor</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-blur blur-1"></div>
+  <div class="bg-blur blur-2"></div>
+  <div class="bg-blur blur-3"></div>
+
+  <!-- Botón fijo de música -->
+  <button class="music-toggle" id="musicToggle" aria-expanded="false" aria-controls="musicPanel">
+    <span class="music-toggle-icon">▶</span>
+    <span>Música de fondo jeje</span>
+  </button>
+
+  <!-- Panel de música -->
+  <aside class="music-panel hidden" id="musicPanel">
+  <div class="music-panel-inner">
+    <button class="music-play" id="playPauseBtn" aria-label="Play or pause music">▶</button>
+
+    <div class="music-content">
+      <label for="volumeRange">Volumen</label>
+
+      <div class="volume-row">
+        <span id="volumeValue">0%</span>
+      </div>
+
+      <input type="range" id="volumeRange" min="0" max="100" value="0" />
+
+      <p class="music-credit">
+        Sonando: "te quiero tanto" — Kevin Kaarl
+      </p>
+
+      <p class="music-description">
+        Una canción que habla por si solo, de como querer a alguien con todo el corazón
+        habla de recuerdos, ternura, amor profundo y ese miedo bonito de perder
+        a una persona que significa demasiado, siendo tu nena.
+      </p>
+    </div>
+  </div>
+</aside>
+
+  <!-- Pantalla principal -->
+  <main class="hero" id="homeScreen">
+    <p class="eyebrow reveal delay-1">3 MESES, MISMO AMOR Y SENTIMIENTO</p>
+
+    <h1 class="hero-title reveal delay-2">
+      Una pequeña carta de amor<br />
+      para mi niña que es dueña de mi corazon.
+    </h1>
+
+    <p class="hero-text reveal delay-3">
+      Dale al corazon para que descubras todo el amor y los deseos que tengo contigo en mi vida mi amor.
+    </p>
+
+    <p class="hero-tags reveal delay-4">AMOR • PACIENCIA • COMPRENSION</p>
+
+    <button class="heart-button reveal delay-5" id="openLetter" aria-label="Open love letter">
+      <span class="heart-icon">❤</span>
+    </button>
+  </main>
+
+  <!-- Carta -->
+  <section class="screen-overlay hidden" id="letterScreen">
+    <div class="paper-card card-entrance">
+      <div class="card-badge">💜</div>
+
+      <div class="card-header">
+        <h2 class="script-title">Para la persona mas importante en mi vida &lt;3</h2>
+        <div class="tiny-line"></div>
+      </div>
+
+      <div class="letter-box">
+        <p>holaaa princesaaa ya 3 mesesitos juntoooos,</p>
+
+        <p>
+          Te amo tanto nena, eres y siempre seras la mejor como siempre te he dicho
+          porque lo eres, eres lo mas maravilloso que tengo en mi vida, y siempre quiero
+          prometerte que te quiero amar como si fuera el ultimo dia y que todo siempre salga bien 
+          confio en nosotros, porque hemos aprendido lo necesario y seguiremos mejorando por esta relacion
+          tan bonita y estable que tenemos, hay errores pero se que juntos liberaremos todo eso.
+        </p>
+
+        <p>
+          Cuantas veces en la vida se tendra el gran privilegio de tenerte?
+          de poder verte sonreir y escucharte reir que eso me calma el alma
+          y si le soy muy honesto, haria lo que fuera hasta lo imposible con tal 
+          de mirar su sonrisa una y otra vez por siempre con tal de poder ser esa 
+          invencion capaz de provocar tu linda risa, sonrisa y forma de amar
+        </p>
+
+        <p>
+          si te apagas, te prometo amarte con mas fuerza y mas
+          prometo darte la luz que tanto buscas en la oscuridad, regar el jardin
+          con el amor que me brindaste desde el primer dia, siempre, y prometere 
+          cuidarte cuando estes mal para asegurarme que vuelvas a florecer mi linda florecita de campo
+          Porque si hay algo que le pido a Dios, es que si alguna vez llega a ser necesario
+          que me permita ser aquello que te haga falta siempre, como tu lo llegaste a hacer conmigo.
+        </p>
+
+        <p>
+          Te prometo mi amor, que te amare con toda la seguridad de saber lo que siento siempre
+          de ya no ser alguien que ama a medias, dar todo siempre como si fuera el ultimo, darte 
+          hasta lo ultimo que quede de mi, te amare en lo hecho, en la salud, en las enfermedades,
+          en la pobreza aunque nunca seremos pobres por ser millonarios teniendonos uno al otro,
+          te dare siempre todo lo que quiero darte, porque lo tengo todo porque nacio de tu gran y lindo amor 
+          porque mi amor le prometo mucho que, si tan solo tenemos una vida, yo quiero vivirla contigo.
+        </p>
+
+        <p>Te amo cariño &lt;3</p>
+      </div>
+
+      <button class="pill-button" id="toReasons">Siguiente →</button>
+    </div>
+  </section>
+
+  <!-- Razones -->
+  <section class="screen-overlay hidden" id="reasonsScreen">
+    <div class="paper-card reasons-card card-entrance">
+      <div class="card-header reasons-header">
+        <div class="tiny-line"></div>
+        <h2 class="script-title">100 promesas que te hare siempre</h2>
+        <div class="tiny-line"></div>
+      </div>
+
+      <p class="reasons-subtitle">
+        Miles de promesas y todas las quiero cumplir y seguire cumpliedolas siempre
+        porque eres lo mas lindo en mi vida y quiero darte todo lo que mereces y ser ese hombre que estara toda tu vida.
+      </p>
+
+      <div class="reasons-box">
+        <ol id="reasonsList"></ol>
+      </div>
+
+      <button class="pill-button" id="toFinal">Siguiente ➜</button>
+    </div>
+  </section>
+
+  <!-- Pantalla final -->
+  <section class="screen-overlay hidden" id="finalScreen">
+    <div class="final-card card-entrance">
+      <div class="final-visual" id="finalVisual">
+        <img
+          src="assets/final-image.jpeg"
+          alt="Cute illustration"
+          id="finalImage"
+          onerror="this.style.display='none'; document.getElementById('finalVisual').classList.add('fallback-mode');"
+        />
+        <div class="fallback-heart">🩷</div>
+      </div>
+
+      <p class="final-message">💌 “TE AMOOO MI NENA HERMOSAAAA &lt;3”</p>
+
+      <button class="outline-button" id="readAgain">Leer de Nuevo ↻</button>
+    </div>
+  </section>
+
+  <audio id="bgMusic" loop preload="auto">
+    <source src="music/te-quiero-tanto.mp3" type="audio/mpeg" />
+    Tu navegador no soporta audio HTML5.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
